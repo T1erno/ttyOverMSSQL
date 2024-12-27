@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ttyovermssql"
+version = "1.0.0"
+description = "Spawn pseudo TTY using Microsoft SQL Server"
+authors = ["T1erno <Erickdeveloper2000@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+argparse = "^1.4.0"
+rich = "^13.9.4"
+prompt-toolkit = "^3.0.48"
+pymssql = "^2.3.2"
+
+[tool.poetry.scripts]
+ttyOverMSSQL = "ttyovermssql.ttyOverMSSQL:main"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
